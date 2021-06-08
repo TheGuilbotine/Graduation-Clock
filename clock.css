@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c0a1f;
+    /* background-image: url("./episode6ceremony.jpg"); */
+}
+
+.headers {
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(200, 64, 235);
+    text-align: center;
+    /* text-decoration: underline rgb(73, 12, 104); */
+}
+
+.headers__main {
+    margin-bottom: 40px;
+    margin-top: 35px;
+    font-size: 65px;
+}
+
+.headers__second {
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.headers__third {
+    font-size: 30px;
+    padding: 0;
+}
+
+.clock-area__clock {
+    animation: flicker 1.5s infinite alternate;
+    color: rgb(250, 238, 65);
+    color: #880d7e;
+    border: 6px solid #f3ced9;
+    padding: 70px;
+    padding-top: 245px;
+    padding-bottom: 245px;
+    border-radius: 50%;
+    box-shadow:
+    0 0 4px #fff,
+    0 0 11px #fff,
+    0 0 19px #fff,
+    0 0 40px rgb(199, 27, 85),
+    0 0 80px rgb(199, 27, 85),
+    0 0 90px rgb(199, 27, 85),
+    0 0 100px rgb(199, 27, 85),
+    0 0 150px rgb(199, 27, 85);
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Flickering animation */
+@keyframes flicker {
+
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+        text-shadow:
+        0 0 11px #fff,
+        0 0 11px #fff,
+        0 0 22px #fff,
+        0 0 44px rgb(94, 5, 129),
+        0 0 88px rgb(94, 5, 129),
+        0 0 99px rgb(94, 5, 129),
+        0 0 111px rgb(94, 5, 129),
+        0 0 155px rgb(94, 5, 129);
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+  }
+
+ .clock-area {
+     margin-top: 25px;
+     margin-bottom: 35px;
+ }
