@@ -1,5 +1,5 @@
 window.addEventListener("DOMContentLoaded", event => {
-    var end = new Date("09/17/2021");
+    var end = new Date("2021-09-17T20:30:00Z");
     var _second = 1000;
     var _minute = _second * 60;
     var _hour = _minute * 60;
