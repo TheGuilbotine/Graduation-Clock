@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", event => {
         var timeLeft = end - now;
         if (timeLeft < 0) {
             clearInterval(timer);
-            clockDiv.innerHTML = "GRADUATION!";
+            clockDiv.innerHTML = "<h1>GRaADUaATION!</h1> <h2>Can't say how much I will mis you all!!!! Good Luck with your prosperous futures.</h2>";
             return;
         }
         var days = Math.floor(timeLeft / _day);
@@ -24,6 +24,25 @@ window.addEventListener("DOMContentLoaded", event => {
         clockDiv.innerHTML += hours + 'hrs ';
         clockDiv.innerHTML += minutes + 'mins ';
         clockDiv.innerHTML += seconds + 'secs';
+
+        // if (days) {
+        //     clockDiv.innerHTML = days + 'days ';
+        //     clockDiv.innerHTML += hours + 'hrs ';
+        //     clockDiv.innerHTML += minutes + 'mins ';
+        //     clockDiv.innerHTML += seconds + 'secs';
+        // }
+        // if (!days) {
+        //     clockDiv.innerHTML = hours + 'hrs ';
+        //     clockDiv.innerHTML += minutes + 'mins ';
+        //     clockDiv.innerHTML += seconds + 'secs';
+        // }
+        // if (!hours) {
+        //     clockDiv.innerHTML = minutes + 'mins ';
+        //     clockDiv.innerHTML += seconds + 'secs';
+        // }
+        // if (!minutes) {
+        //     clockDiv.innerHTML = seconds + 'secs';
+        // }
     }
     timer = setInterval(showRemaining, 1000);
 
