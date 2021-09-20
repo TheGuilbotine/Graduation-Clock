@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", event => {
         var timeLeft = end - now;
         if (timeLeft < 0) {
             clearInterval(timer);
-            clockDiv.innerHTML = "<h1>GRaADUaATION!</h1> <h2>Can't say how much I will mis you all!!!! Good Luck with your prosperous futures.</h2>";
+            clockDiv.innerHTML = "<h1>GRaADUaATION!</h1> <h2>Good Luck with your prosperous futures.</h2>";
             return;
         }
         var days = Math.floor(timeLeft / _day);
